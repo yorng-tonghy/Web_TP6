@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  margin-top: 4rem;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+#page-Number {
+  width: 5%;
+}
+
+.content-wrapper {
+  padding: 8px;
+  width: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.content {
+  width: 100%;
+  padding: 3px;
+  background-color: black;
+}
+
+.content > * {
+  padding: 1px;
+  height: 6rem;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin-top: 2px;
+  background-color: white;
+}
+
+.content p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#loader {
+  margin-top: 5rem;
+  margin-left: 18rem;
+  border: 16px solid #17171a;
+  border-radius: 50%;
+  border-top: 16px solid #3959db;
+  border-bottom: 16px solid #4b3fe9;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 1500ms linear infinite;
+          animation: spin 1500ms linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#page-Number {
+  background-color: white;
+  color: black;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

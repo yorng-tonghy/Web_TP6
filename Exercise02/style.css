@@ -1,0 +1,124 @@
+@import url("https:fonts.googleapis.com");
+@import url("https:fonts.gstatic.com");
+@import url("https:fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  margin-top: 4rem;
+  border: 4px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #beb6b6;
+}
+
+#page-Number {
+  width: 5%;
+}
+
+.content-wrapper {
+  padding: 8px;
+  width: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.content {
+  width: 100%;
+  padding: 3px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: grey;
+}
+
+.content > * {
+  padding: 1px;
+  height: 6rem;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin-top: 3px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.content p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#loader {
+  margin: auto;
+  border: 16px solid #ffffff;
+  border-radius: 50%;
+  border-top: 16px solid #d08235;
+  border-bottom: 16px solid #cc9600;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 1500ms linear infinite;
+          animation: spin 1500ms linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#page-Number {
+  background-color: white;
+  color: #11c482;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
